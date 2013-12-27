@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FFE71A7B186C03C60093733F /* iPhoneBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE71A7A186C03C60093733F /* iPhoneBoard.storyboard */; };
+		FFE71A8D186C9EBD0093733F /* CharacterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE71A8C186C9EBD0093733F /* CharacterTableViewController.m */; };
+		FFE71A90186C9F7B0093733F /* SystemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE71A8F186C9F7B0093733F /* SystemTableViewController.m */; };
+		FFE71A93186CA1110093733F /* PlanetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE71A92186CA1110093733F /* PlanetTableViewController.m */; };
+		FFE71A96186CA12B0093733F /* MoonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE71A95186CA12B0093733F /* MoonTableViewController.m */; };
+		FFE71A99186CA14F0093733F /* PlanetDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE71A98186CA14F0093733F /* PlanetDataViewController.m */; };
+		FFE71A9C186CA1CC0093733F /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE71A9B186CA1CC0093733F /* OptionsViewController.m */; };
+		FFE71AA1186CAAC30093733F /* Wrench-Outline-32.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE71AA0186CAAC30093733F /* Wrench-Outline-32.png */; };
+		FFE71AA7186CACFA0093733F /* AddCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE71AA6186CACFA0093733F /* AddCharacterViewController.m */; };
+		FFE71AAA186CAD050093733F /* AddSystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE71AA9186CAD050093733F /* AddSystemViewController.m */; };
+		FFE71AAD186CAD0F0093733F /* AddPlanetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE71AAC186CAD0F0093733F /* AddPlanetViewController.m */; };
+		FFE71AB0186CAD170093733F /* AddMoonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE71AAF186CAD170093733F /* AddMoonViewController.m */; };
+		FFE71AB3186CBB380093733F /* Planet.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE71AB2186CBB380093733F /* Planet.m */; };
+		FFE71AB6186CBB390093733F /* Moon.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE71AB5186CBB390093733F /* Moon.m */; };
+		FFE71AB9186CBB390093733F /* System.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE71AB8186CBB390093733F /* System.m */; };
+		FFE71ABC186CBB390093733F /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE71ABB186CBB390093733F /* Character.m */; };
 		FFFF60A4186B6EC600844AC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFF60A3186B6EC600844AC7 /* Foundation.framework */; };
 		FFFF60A6186B6EC600844AC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFF60A5186B6EC600844AC7 /* CoreGraphics.framework */; };
 		FFFF60A8186B6EC600844AC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFF60A7186B6EC600844AC7 /* UIKit.framework */; };
@@ -22,6 +38,7 @@
 		FFFF60C5186B6EC600844AC7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFF60A9186B6EC600844AC7 /* CoreData.framework */; };
 		FFFF60CD186B6EC600844AC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFFF60CB186B6EC600844AC7 /* InfoPlist.strings */; };
 		FFFF60CF186B6EC600844AC7 /* Starbound_Planet_TrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFF60CE186B6EC600844AC7 /* Starbound_Planet_TrackerTests.m */; };
+		FFFF60EC186B853A00844AC7 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFF60EB186B853A00844AC7 /* DataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +52,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FFE71A7A186C03C60093733F /* iPhoneBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhoneBoard.storyboard; sourceTree = "<group>"; };
+		FFE71A8B186C9EBD0093733F /* CharacterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterTableViewController.h; sourceTree = "<group>"; };
+		FFE71A8C186C9EBD0093733F /* CharacterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterTableViewController.m; sourceTree = "<group>"; };
+		FFE71A8E186C9F7B0093733F /* SystemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemTableViewController.h; sourceTree = "<group>"; };
+		FFE71A8F186C9F7B0093733F /* SystemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemTableViewController.m; sourceTree = "<group>"; };
+		FFE71A91186CA1110093733F /* PlanetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanetTableViewController.h; sourceTree = "<group>"; };
+		FFE71A92186CA1110093733F /* PlanetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanetTableViewController.m; sourceTree = "<group>"; };
+		FFE71A94186CA12B0093733F /* MoonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoonTableViewController.h; sourceTree = "<group>"; };
+		FFE71A95186CA12B0093733F /* MoonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoonTableViewController.m; sourceTree = "<group>"; };
+		FFE71A97186CA14F0093733F /* PlanetDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlanetDataViewController.h; path = ../PlanetDataViewController.h; sourceTree = "<group>"; };
+		FFE71A98186CA14F0093733F /* PlanetDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlanetDataViewController.m; path = ../PlanetDataViewController.m; sourceTree = "<group>"; };
+		FFE71A9A186CA1CC0093733F /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
+		FFE71A9B186CA1CC0093733F /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
+		FFE71AA0186CAAC30093733F /* Wrench-Outline-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wrench-Outline-32.png"; sourceTree = "<group>"; };
+		FFE71AA5186CACFA0093733F /* AddCharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCharacterViewController.h; sourceTree = "<group>"; };
+		FFE71AA6186CACFA0093733F /* AddCharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCharacterViewController.m; sourceTree = "<group>"; };
+		FFE71AA8186CAD050093733F /* AddSystemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSystemViewController.h; sourceTree = "<group>"; };
+		FFE71AA9186CAD050093733F /* AddSystemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSystemViewController.m; sourceTree = "<group>"; };
+		FFE71AAB186CAD0F0093733F /* AddPlanetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPlanetViewController.h; sourceTree = "<group>"; };
+		FFE71AAC186CAD0F0093733F /* AddPlanetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPlanetViewController.m; sourceTree = "<group>"; };
+		FFE71AAE186CAD170093733F /* AddMoonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMoonViewController.h; sourceTree = "<group>"; };
+		FFE71AAF186CAD170093733F /* AddMoonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMoonViewController.m; sourceTree = "<group>"; };
+		FFE71AB1186CBB380093733F /* Planet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Planet.h; sourceTree = "<group>"; };
+		FFE71AB2186CBB380093733F /* Planet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Planet.m; sourceTree = "<group>"; };
+		FFE71AB4186CBB390093733F /* Moon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Moon.h; sourceTree = "<group>"; };
+		FFE71AB5186CBB390093733F /* Moon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Moon.m; sourceTree = "<group>"; };
+		FFE71AB7186CBB390093733F /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System.h; sourceTree = "<group>"; };
+		FFE71AB8186CBB390093733F /* System.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = System.m; sourceTree = "<group>"; };
+		FFE71ABA186CBB390093733F /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		FFE71ABB186CBB390093733F /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
 		FFFF60A0186B6EC600844AC7 /* Starbound Planet Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Starbound Planet Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFFF60A3186B6EC600844AC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FFFF60A5186B6EC600844AC7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +100,8 @@
 		FFFF60CA186B6EC600844AC7 /* Starbound Planet TrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Starbound Planet TrackerTests-Info.plist"; sourceTree = "<group>"; };
 		FFFF60CC186B6EC600844AC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FFFF60CE186B6EC600844AC7 /* Starbound_Planet_TrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Starbound_Planet_TrackerTests.m; sourceTree = "<group>"; };
+		FFFF60EA186B853A00844AC7 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		FFFF60EB186B853A00844AC7 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +130,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FFE71A9D186CAA280093733F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FFE71AA0186CAAC30093733F /* Wrench-Outline-32.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		FFE71AA3186CAC7A0093733F /* Table View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFE71A8B186C9EBD0093733F /* CharacterTableViewController.h */,
+				FFE71A8C186C9EBD0093733F /* CharacterTableViewController.m */,
+				FFE71A8E186C9F7B0093733F /* SystemTableViewController.h */,
+				FFE71A8F186C9F7B0093733F /* SystemTableViewController.m */,
+				FFE71A91186CA1110093733F /* PlanetTableViewController.h */,
+				FFE71A92186CA1110093733F /* PlanetTableViewController.m */,
+				FFE71A97186CA14F0093733F /* PlanetDataViewController.h */,
+				FFE71A98186CA14F0093733F /* PlanetDataViewController.m */,
+				FFE71A94186CA12B0093733F /* MoonTableViewController.h */,
+				FFE71A95186CA12B0093733F /* MoonTableViewController.m */,
+			);
+			name = "Table View Controllers";
+			sourceTree = "<group>";
+		};
+		FFE71AA4186CAC850093733F /* Add Object View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFE71AA5186CACFA0093733F /* AddCharacterViewController.h */,
+				FFE71AA6186CACFA0093733F /* AddCharacterViewController.m */,
+				FFE71AA8186CAD050093733F /* AddSystemViewController.h */,
+				FFE71AA9186CAD050093733F /* AddSystemViewController.m */,
+				FFE71AAB186CAD0F0093733F /* AddPlanetViewController.h */,
+				FFE71AAC186CAD0F0093733F /* AddPlanetViewController.m */,
+				FFE71AAE186CAD170093733F /* AddMoonViewController.h */,
+				FFE71AAF186CAD170093733F /* AddMoonViewController.m */,
+			);
+			name = "Add Object View Controllers";
+			sourceTree = "<group>";
+		};
 		FFFF6097186B6EC600844AC7 = {
 			isa = PBXGroup;
 			children = (
@@ -115,10 +204,14 @@
 		FFFF60AB186B6EC600844AC7 /* Starbound Planet Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				FFFF60DA186B7D7500844AC7 /* Views */,
+				FFFF60D9186B7D6B00844AC7 /* View Controllers */,
+				FFFF60D8186B7D6200844AC7 /* Core Data */,
 				FFFF60B4186B6EC600844AC7 /* AppDelegate.h */,
 				FFFF60B5186B6EC600844AC7 /* AppDelegate.m */,
+				FFFF60EA186B853A00844AC7 /* DataManager.h */,
+				FFFF60EB186B853A00844AC7 /* DataManager.m */,
 				FFFF60BA186B6EC600844AC7 /* Images.xcassets */,
-				FFFF60B7186B6EC600844AC7 /* Starbound_Planet_Tracker.xcdatamodeld */,
 				FFFF60AC186B6EC600844AC7 /* Supporting Files */,
 			);
 			path = "Starbound Planet Tracker";
@@ -127,6 +220,7 @@
 		FFFF60AC186B6EC600844AC7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FFE71A9D186CAA280093733F /* Images */,
 				FFFF60AD186B6EC600844AC7 /* Starbound Planet Tracker-Info.plist */,
 				FFFF60AE186B6EC600844AC7 /* InfoPlist.strings */,
 				FFFF60B1186B6EC600844AC7 /* main.m */,
@@ -151,6 +245,41 @@
 				FFFF60CB186B6EC600844AC7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFFF60D8186B7D6200844AC7 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				FFFF60B7186B6EC600844AC7 /* Starbound_Planet_Tracker.xcdatamodeld */,
+				FFE71ABA186CBB390093733F /* Character.h */,
+				FFE71ABB186CBB390093733F /* Character.m */,
+				FFE71AB7186CBB390093733F /* System.h */,
+				FFE71AB8186CBB390093733F /* System.m */,
+				FFE71AB4186CBB390093733F /* Moon.h */,
+				FFE71AB5186CBB390093733F /* Moon.m */,
+				FFE71AB1186CBB380093733F /* Planet.h */,
+				FFE71AB2186CBB380093733F /* Planet.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		FFFF60D9186B7D6B00844AC7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFE71AA4186CAC850093733F /* Add Object View Controllers */,
+				FFE71AA3186CAC7A0093733F /* Table View Controllers */,
+				FFE71A9A186CA1CC0093733F /* OptionsViewController.h */,
+				FFE71A9B186CA1CC0093733F /* OptionsViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FFFF60DA186B7D7500844AC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFE71A7A186C03C60093733F /* iPhoneBoard.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +329,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Kai Strife Productions";
 				TargetAttributes = {
+					FFFF609F186B6EC600844AC7 = {
+						DevelopmentTeam = S94YC8N3NS;
+					};
 					FFFF60BF186B6EC600844AC7 = {
 						TestTargetID = FFFF609F186B6EC600844AC7;
 					};
@@ -229,7 +361,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFFF60B0186B6EC600844AC7 /* InfoPlist.strings in Resources */,
+				FFE71A7B186C03C60093733F /* iPhoneBoard.storyboard in Resources */,
 				FFFF60BB186B6EC600844AC7 /* Images.xcassets in Resources */,
+				FFE71AA1186CAAC30093733F /* Wrench-Outline-32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +382,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFE71A8D186C9EBD0093733F /* CharacterTableViewController.m in Sources */,
+				FFE71AAD186CAD0F0093733F /* AddPlanetViewController.m in Sources */,
+				FFE71AAA186CAD050093733F /* AddSystemViewController.m in Sources */,
+				FFFF60EC186B853A00844AC7 /* DataManager.m in Sources */,
+				FFE71AB3186CBB380093733F /* Planet.m in Sources */,
+				FFE71AB6186CBB390093733F /* Moon.m in Sources */,
+				FFE71A96186CA12B0093733F /* MoonTableViewController.m in Sources */,
 				FFFF60B6186B6EC600844AC7 /* AppDelegate.m in Sources */,
+				FFE71A93186CA1110093733F /* PlanetTableViewController.m in Sources */,
 				FFFF60B2186B6EC600844AC7 /* main.m in Sources */,
+				FFE71A90186C9F7B0093733F /* SystemTableViewController.m in Sources */,
+				FFE71AB9186CBB390093733F /* System.m in Sources */,
 				FFFF60B9186B6EC600844AC7 /* Starbound_Planet_Tracker.xcdatamodeld in Sources */,
+				FFE71AA7186CACFA0093733F /* AddCharacterViewController.m in Sources */,
+				FFE71A99186CA14F0093733F /* PlanetDataViewController.m in Sources */,
+				FFE71A9C186CA1CC0093733F /* OptionsViewController.m in Sources */,
+				FFE71AB0186CAD170093733F /* AddMoonViewController.m in Sources */,
+				FFE71ABC186CBB390093733F /* Character.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,9 +520,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Starbound Planet Tracker/Starbound Planet Tracker-Prefix.pch";
 				INFOPLIST_FILE = "Starbound Planet Tracker/Starbound Planet Tracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -384,9 +535,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Starbound Planet Tracker/Starbound Planet Tracker-Prefix.pch";
 				INFOPLIST_FILE = "Starbound Planet Tracker/Starbound Planet Tracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -453,6 +606,7 @@
 				FFFF60D4186B6EC600844AC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFFF60D5186B6EC600844AC7 /* Build configuration list for PBXNativeTarget "Starbound Planet TrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +615,7 @@
 				FFFF60D7186B6EC600844AC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

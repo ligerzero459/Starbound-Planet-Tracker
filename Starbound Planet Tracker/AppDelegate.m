@@ -16,10 +16,55 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    // Test data 1
+    Character *person = [[DataManager manager] newCharacter];
+    [person setName:@"Kai Strife"];
+    [person setIndex:[NSNumber numberWithInt:0]];
+    
+    System *sys = [[DataManager manager] newSystem];
+    [sys setSector:@"Alpha"];
+    [sys setName:@"Centuri Maria"];
+    [sys setCoordX:[NSNumber numberWithInt:32146858]];
+    [sys setCoordY:[NSNumber numberWithInt:-64685321]];
+    [sys setIndex:[NSNumber numberWithInt:0]];
+    [person addSystemObject:sys];
+    
+    Planet *celestialObject = [[DataManager manager] newPlanet];
+    [celestialObject setNumber:[NSNumber numberWithInt:1]];
+    [celestialObject setBiome:@"Forest"];
+    [celestialObject setThreat:[NSNumber numberWithInt:1]];
+    [sys addPlanetObject:celestialObject];
+    
+    Moon *mun = [[DataManager manager] newMoon];
+    [mun setBiome:@"Desert"];
+    [mun setThreat:[NSNumber numberWithInt:1]];
+    [mun setIndex:[NSNumber numberWithInt:0]];
+    [celestialObject addMoonObject:mun];
+    
+    mun = [[DataManager manager] newMoon];
+    [mun setBiome:@"Arid"];
+    [mun setThreat:[NSNumber numberWithInt:1]];
+    [mun setIndex:[NSNumber numberWithInt:1]];
+    [celestialObject addMoonObject:mun];
+    
+    mun = [[DataManager manager] newMoon];
+    [mun setBiome:@"Forest"];
+    [mun setThreat:[NSNumber numberWithInt:1]];
+    [mun setIndex:[NSNumber numberWithInt:2]];
+    [celestialObject addMoonObject:mun];
+
+    celestialObject = [[DataManager manager] newPlanet];
+    [celestialObject setNumber:[NSNumber numberWithInt:2]];
+    [celestialObject setBiome:@"Snow"];
+    [celestialObject setThreat:[NSNumber numberWithInt:1]];
+    [sys addPlanetObject:celestialObject];
+    
+    mun = [[DataManager manager] newMoon];
+    [mun setBiome:@"Desert"];
+    [mun setThreat:[NSNumber numberWithInt:1]];
+    [mun setIndex:[NSNumber numberWithInt:0]];
+    [celestialObject addMoonObject:mun];
+    
     return YES;
 }
 
@@ -136,6 +181,19 @@
     }    
     
     return _persistentStoreCoordinator;
+}
+
+- (NSArray *)getData:(NSString *)identifier
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:identifier
+                                              inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    NSError *error;
+    
+    NSArray *fetchedData = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    
+    return fetchedData;
 }
 
 #pragma mark - Application's Documents directory

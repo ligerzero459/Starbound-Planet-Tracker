@@ -19,4 +19,6 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
+- (NSArray *)getData:(NSString *)identifier;
+
 @end
