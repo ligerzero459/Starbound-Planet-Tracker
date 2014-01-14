@@ -18,6 +18,8 @@
     AppDelegate *appDelegate;
 }
 
+@synthesize sectors, biomes;
+
 + (DataManager *)manager
 {
     static DataManager *manager = nil;
@@ -43,9 +45,19 @@
     {
         appDelegate = [UIApplication sharedApplication].delegate;
         self.managedObjectContext = appDelegate.managedObjectContext;
+        
+        self.sectors = [NSArray arrayWithObjects:@"Alpha", @"Beta", @"Gamma", @"Delta", @"X", nil];
+        self.biomes = [NSArray arrayWithObjects:@"Arid", @"Desert", @"Forest", @"Gas Giant", @"Grasslands", @"Jungle", @"Magma", @"Moon", @"Snow", @"Tentacles", @"Tundra", @"Volcanic", nil];
     }
     
     return self;
+}
+
+#pragma mark - Save Data
+
+- (void)saveContext
+{
+    [appDelegate saveContext];
 }
 
 #pragma mark - Data Retrieval
@@ -117,21 +129,25 @@
 - (void)removeCharacter:(Character *)character
 {
     [self.managedObjectContext deleteObject:character];
+    [self saveContext];
 }
 
 - (void)removeSystem:(System *)system
 {
     [self.managedObjectContext deleteObject:system];
+    [self saveContext];
 }
 
 - (void)removePlanet:(Planet *)planet
 {
     [self.managedObjectContext deleteObject:planet];
+    [self saveContext];
 }
 
 - (void)removeMoon:(Moon *)moon
 {
     [self.managedObjectContext deleteObject:moon];
+    [self saveContext];
 }
 
 @end

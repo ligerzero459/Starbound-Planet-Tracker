@@ -103,6 +103,8 @@
     Character *newChar = [[DataManager manager] newCharacter];
     [newChar setName:[characterTextField text]];
     
+    [[DataManager manager] saveContext];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

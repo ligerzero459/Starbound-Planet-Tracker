@@ -13,9 +13,6 @@
 @end
 
 @implementation AddSystemViewController
-{
-    NSArray *sectors;
-}
 
 @synthesize systemTextField, xcoordTextField, ycoordTextField, sectorSpinner;
 @synthesize selectedCharacter;
@@ -32,8 +29,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    sectors = [NSArray arrayWithObjects:@"Alpha", @"Beta", @"Gamma", @"Delta", @"X", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,12 +44,12 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return [sectors count];
+    return [[[DataManager manager] sectors] count];
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return [sectors objectAtIndex:row];
+    return [[[DataManager manager] sectors] objectAtIndex:row];
 }
 
 - (IBAction)cancelButtonPressed:(id)sender
@@ -66,12 +61,14 @@
 {
     System *solarSystem = [[DataManager manager] newSystem];
     [solarSystem setName:[systemTextField text]];
-    [solarSystem setSector:[sectors objectAtIndex:[sectorSpinner selectedRowInComponent:0]]];
+    [solarSystem setSector:[[[DataManager manager] sectors] objectAtIndex:[sectorSpinner selectedRowInComponent:0]]];
     [solarSystem setCoordX:[NSNumber numberWithInteger:[[xcoordTextField text] integerValue]]];
     [solarSystem setCoordY:[NSNumber numberWithInteger:[[ycoordTextField text] integerValue]]];
     [solarSystem setIndex:[NSNumber numberWithInt:[[selectedCharacter system] count]]];
     
     [selectedCharacter addSystemObject:solarSystem];
+    
+    [[DataManager manager] saveContext];
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
