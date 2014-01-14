@@ -73,8 +73,17 @@
     
     System *sys = [allSystems objectAtIndex:[indexPath row]];
     
+    int totalPlanets = 0;
+    
+    totalPlanets += [[sys planet] count];
+    
+    for (Planet *p in [sys planet])
+    {
+        totalPlanets += [[p moon] count];
+    }
+    
     [[cell textLabel] setText:[NSString stringWithFormat:@"%@ %@", [sys sector], [sys name]]];
-    [[cell detailTextLabel] setText:[NSString stringWithFormat:@"X: %@, Y: %@", [sys coordX], [sys coordY]]];
+    [[cell detailTextLabel] setText:[NSString stringWithFormat:@"X: %@, Y: %@, Planets: %d", [sys coordX], [sys coordY], totalPlanets]];
     
     return cell;
 }
@@ -88,19 +97,25 @@
 }
 */
 
-/*
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
+        [tableView beginUpdates];
+        
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [[DataManager manager] removeSystem:[allSystems objectAtIndex:[indexPath row]]];
+        
+        allSystems = [[DataManager manager] getSystems:selectedCharacter];
+        
+        [tableView endUpdates];
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.

@@ -14,6 +14,9 @@
 
 @implementation AddMoonViewController
 
+@synthesize threatTextField, biomeSpinner;
+@synthesize selectedPlanet;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -26,12 +29,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,6 +42,16 @@
     return 1;
 }
 
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return [[[DataManager manager] biomes] count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return [[[DataManager manager] biomes] objectAtIndex:row];
+}
+
 - (IBAction)cancelButtonPressed:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -52,6 +59,15 @@
 
 - (IBAction)doneButtonPressed:(id)sender
 {
+    Moon *mun = [[DataManager manager] newMoon];
+    [mun setIndex:[NSNumber numberWithInteger:[[selectedPlanet moon] count]]];
+    [mun setThreat:[NSNumber numberWithInteger:[[threatTextField text] integerValue]]];
+    [mun setBiome:[[[DataManager manager] biomes] objectAtIndex:[biomeSpinner selectedRowInComponent:0]]];
+    
+    [selectedPlanet addMoonObject:mun];
+    
+    [[DataManager manager] saveContext];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

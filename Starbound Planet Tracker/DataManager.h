@@ -16,7 +16,12 @@
 
 @interface DataManager : NSObject
 
+@property (nonatomic, retain) NSArray *biomes;
+@property (nonatomic, retain) NSArray *sectors;
+
 + (DataManager *)manager;
+
+- (void)saveContext;
 
 /*
  *  Data retrieval methods
